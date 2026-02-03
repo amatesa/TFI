@@ -1,30 +1,28 @@
-GESTOR DE INVENTARIO - Proyecto Final Python
-============================================
+# Inventory Management System (Python + SQLite)
 
-Descripción:
-Sistema de gestión de inventario que permite registrar, consultar, actualizar, buscar y eliminar productos, además de generar reportes de bajo stock.
+This project is a console-based inventory management system developed in Python using SQLite for data persistence.
 
-Estructura del proyecto:
-- db.py : Crea la base de datos y tabla 'productos'.
-- funciones_crud.py : Lógica de gestión de productos (CRUD).
-- menu.py : Interfaz en terminal para interactuar con el sistema.
-- inventario.db : Base de datos generada automáticamente.
+It allows users to manage products through basic CRUD operations and monitor stock levels via a simple menu-driven interface.
 
-Tecnologías usadas:
-- Python 3.x
-- SQLite3 (base de datos)
-- colorama (mejora visual en terminal)
+## Features
 
-Ejecución:
-1. Asegurate de tener `colorama` instalado:
-   `pip install colorama`
-2. Ejecutá el archivo `menu.py`:
-   `python menu.py`
+- Create and manage a local SQLite database.
+- Add, update, delete and list products.
+- Check available stock.
+- Identify products with low stock.
+- Modular structure separating database logic, business logic and user interface.
 
-Funcionalidades:
-- Registrar nuevos productos.
-- Visualizar todos los productos.
-- Actualizar productos por ID.
-- Eliminar productos por ID.
-- Buscar producto por ID.
-- Reporte de productos con stock bajo (por cantidad).
+## Project structure
+
+- `db.py` – Database connection and initialization.
+- `funciones_crud.py` – CRUD operations and inventory logic.
+- `menu.py` – Console menu and user interaction.
+
+## How to run
+
+1. Make sure you have Python 3 installed.
+2. Clone the repository or download the source code.
+3. Run the main menu:
+
+```bash
+python menu.py
